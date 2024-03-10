@@ -28,7 +28,7 @@ const Modal = () => {
       window.location.reload();
       setError("");
     } catch (err) {
-      setError("Oops, incorrect credentials.");
+      setError("You Not Authorized 👹 Get Out!!");
     }
   };
 
@@ -59,7 +59,9 @@ const Modal = () => {
             </button>
           </div>
         </form>
-        <h1>{error}</h1>
+        <h1 style={{ color: "red", backgroundColor: "white", width: "100%" }}>
+          {error}
+        </h1>
       </div>
     </div>
   );
